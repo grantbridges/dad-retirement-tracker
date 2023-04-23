@@ -1,5 +1,5 @@
 const workStartDate = new Date('1981-06-01T08:00:00');
-const workEndDate = new Date('2024-12-31T05:00:00');
+const workEndDate = new Date('2024-10-01T05:00:00');
 
 refreshUI();
 
