@@ -64,10 +64,12 @@ body {
 
 #golfing {
     width: 100%;
-    display: none;
+    display: flex;
+    justify-content: center;
 }
 
-#golfing > img {
+#golfing-gif {
+    display: none; /*will show when retirement is hit*/
     width: 15rem;
 }
 

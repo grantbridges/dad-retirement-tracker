@@ -5,7 +5,7 @@
 const retireeName = "Tommy Bridges"
 const workStartDate = new Date('1981-06-01T08:00:00');
 //const workEndDate = new Date('2024-12-27T05:00:00');
-const workEndDate = new Date(new Date().getTime() + (0 * 1000));
+const workEndDate = new Date(new Date().getTime() + (5 * 1000));
 
 refreshUI();
 
@@ -116,9 +116,8 @@ function refreshProgressBar() {
     if (percentComplete >= 100) {
         percentComplete = 100;
 
-        let golfGif = document.getElementById("golfing");
-        golfGif.style.display = "flex";
-        golfGif.style.justifyContent = "center";
+        let golfGif = document.getElementById("golfing-gif");
+        golfGif.style.display = "block";
     }
     else {
         percentComplete = percentComplete.toFixed(8);
