@@ -5,7 +5,7 @@
 const retireeName = "Tommy Bridges"
 const workStartDate = new Date('1981-06-01T08:00:00');
 const workEndDate = new Date('2024-12-27T05:00:00');
-//const workEndDate = new Date(new Date().getTime() + (5 * 1000));
+//const workEndDate = new Date(new Date().getTime() + /*24 * 60 * 60 * 1000*/ + (10 * 1000));
 
 refreshUI();
 
@@ -49,6 +49,7 @@ function refreshDateDisplay() {
 
         timeLeft.innerHTML = "Retired"
         timeLeft.style.color = "#ffffff";
+        timeLeft.style.textShadow = "";
         bottomText.style.display = "none";
     } else {
         // not yet retired handling
@@ -71,8 +72,10 @@ function refreshDateDisplay() {
         hours = Math.floor(hours);
         minutes = Math.floor(minutes);
 
-        let finalCountDown = days == 0 && hours == 0 && minutes == 0;
-        if (finalCountDown) {
+        let finalDay = days == 0;
+
+        let finalMinute = days == 0 && hours == 0 && minutes == 0;
+        if (finalMinute) {
             // show decimal place for final minute countdown
             seconds = seconds.toFixed(1);
         }
@@ -100,8 +103,12 @@ function refreshDateDisplay() {
 
         timeLeft.innerHTML = countDownText;
 
-        if (finalCountDown) {
-            // change color for dramatic effect
+        // change colors for dramatic effect
+        
+        if (finalMinute) {
+            timeLeft.style.color = "#ed4b24";
+            timeLeft.style.textShadow = "0px 0px 3px #e1b5b5"
+        } else if (finalDay) {
             timeLeft.style.color = "#ff9b83";
         }
         
