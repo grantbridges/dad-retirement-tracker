@@ -1,11 +1,11 @@
 // Grant's start/end date
-// const retireeName = "Grant Bridges"
-// const workStartDate = new Date('2016-05-23T08:00:00');
-// const workEndDate = new Date('2057-12-21T05:00:00');
-const retireeName = "Tommy Bridges"
-const workStartDate = new Date('1981-06-01T08:00:00');
-const workEndDate = new Date('2024-12-27T05:00:00');
-//const workEndDate = new Date(new Date().getTime() + /*24 * 60 * 60 * 1000*/ + (10 * 1000));
+// var retireeName = "Grant Bridges"
+// var workStartDate = new Date('2016-05-23T08:00:00');
+// var workEndDate = new Date('2057-12-21T05:00:00');
+var retireeName = "Tommy Bridges"
+var workStartDate = new Date('1981-06-01T08:00:00');
+var workEndDate = new Date('2024-12-27T05:00:00');
+//var workEndDate = new Date(new Date().getTime() + /*24 * 60 * 60 * 1000*/ + (10 * 1000));
 
 refreshUI();
 
