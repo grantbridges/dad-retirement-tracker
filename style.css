@@ -8,58 +8,68 @@ body {
 #readout {
     text-align: center;
     margin-top: 30vh;
+    margin-bottom: 2rem;
 }
 
-    #readout > #readout-top {
-        font-size: 1.4rem;
-    }
+#readout > #readout-top {
+    font-size: 1.4rem;
+}
 
-    #readout > #readout-time-left {
-        font-size: 3rem;
-        margin-top: 1.5rem;
-    }
+#readout > #readout-time-left {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+}
 
-    #readout > #readout-bottom {
-        font-size: 2rem;
-        margin-top: 1.5rem;
-    }
+#readout > #readout-bottom {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
 
 #progress {
     text-align: center;
-    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
-    #progress > #progress-bar-label {
-        font-size: 1rem;
-        margin-bottom: .2rem;
-    }
+#progress > #progress-bar-label {
+    font-size: 1rem;
+    margin-bottom: .2rem;
+}
 
-    #progress > #progress-bar {
-        width: 60vw;
-        max-width: 30rem;
-        height: .9rem;
-        /*disable default appearance*/
-        -webkit-appearance: none; 
-        appearance: none;
-    }
+#progress > #progress-bar {
+    width: 60vw;
+    max-width: 30rem;
+    height: .9rem;
+    /*disable default appearance*/
+    -webkit-appearance: none; 
+    appearance: none;
+}
 
-    #progress > #progress-bar-percent {
-        font-size: .7rem;
-        text-shadow: 0px 0px 5px #000000;
-        /*hack to position over progress bar*/
-        transform: translateY(-.95rem);
-    }
+#progress > #progress-bar-percent {
+    font-size: .7rem;
+    text-shadow: 0px 0px 5px #000000;
+    /*hack to position over progress bar*/
+    transform: translateY(-.95rem);
+}
 
-    /* https://css-tricks.com/html5-progress-element/ */
-    #progress > #progress-bar::-webkit-progress-bar{
-        background-color: rgb(255, 255, 255);
-        border-radius: 2px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-    }
+/* https://css-tricks.com/html5-progress-element/ */
+#progress > #progress-bar::-webkit-progress-bar{
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
 
-    #progress > #progress-bar::-webkit-progress-value{
-        background: linear-gradient(90deg,rgb(252, 171, 117), rgb(255, 139, 44));
-    }
+#progress > #progress-bar::-webkit-progress-value{
+    background: linear-gradient(90deg,rgb(252, 171, 117), rgb(255, 139, 44));
+}
+
+#golfing {
+    width: 100%;
+    display: none;
+}
+
+#golfing > img {
+    width: 15rem;
+}
 
 #footer {
     text-align: right;
