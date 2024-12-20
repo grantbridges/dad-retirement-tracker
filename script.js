@@ -127,7 +127,7 @@ function refreshProgressBar() {
         golfGif.style.display = "block";
     }
     else {
-        percentComplete = percentComplete.toFixed(8);
+        percentComplete = percentComplete.toFixed(9);
     }
 
     // update progress bar position and percent text
