@@ -4,7 +4,7 @@
 // var workEndDate = new Date('2057-12-21T05:00:00');
 var retireeName = "Tommy Bridges"
 var workStartDate = new Date('1981-06-01T08:00:00');
-var workEndDate = new Date('2024-12-20T17:00:00');
+var workEndDate = new Date('2034-12-20T17:00:00');
 //var workEndDate = new Date(new Date().getTime() + /*24 * 60 * 60 * 1000*/ + (10 * 1000));
 
 refreshUI();
