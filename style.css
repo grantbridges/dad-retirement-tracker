@@ -1,82 +1,82 @@
 body {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: lighter;
-    color: #ffffff;
-    background: linear-gradient(180deg, #2d48ef, #a7b3ff);
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: lighter;
+  color: #ffffff;
+  background: linear-gradient(180deg, #2d48ef, #a7b3ff);
 }
 
 #readout {
-    text-align: center;
-    margin-top: 30vh;
-    margin-bottom: 2rem;
+  text-align: center;
+  margin-top: 30vh;
+  margin-bottom: 2rem;
 }
 
 #readout > #readout-top {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 #readout > #readout-time-left {
-    font-size: 3rem;
-    margin-top: 1.5rem;
+  font-size: 3rem;
+  margin-top: 1.5rem;
 }
 
 #readout > #readout-bottom {
-    font-size: 2rem;
-    margin-top: 1.5rem;
+  font-size: 2rem;
+  margin-top: 1.5rem;
 }
 
 #progress {
-    text-align: center;
-    margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 #progress > #progress-bar-label {
-    font-size: 1rem;
-    margin-bottom: .2rem;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
 }
 
 #progress > #progress-bar {
-    width: 60vw;
-    max-width: 30rem;
-    height: .9rem;
-    /*disable default appearance*/
-    -webkit-appearance: none; 
-    appearance: none;
+  width: 60vw;
+  max-width: 30rem;
+  height: 0.9rem;
+  /*disable default appearance*/
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 #progress > #progress-bar-percent {
-    font-size: .7rem;
-    text-shadow: 0px 0px 5px #000000;
-    /*hack to position over progress bar*/
-    transform: translateY(-.95rem);
+  font-size: 0.7rem;
+  text-shadow: 0px 1px 4px #000000;
+  /*hack to position over progress bar*/
+  transform: translateY(0.2rem);
 }
 
 /* https://css-tricks.com/html5-progress-element/ */
-#progress > #progress-bar::-webkit-progress-bar{
-    background-color: rgb(255, 255, 255);
-    border-radius: 2px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+#progress > #progress-bar::-webkit-progress-bar {
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
-#progress > #progress-bar::-webkit-progress-value{
-    background: linear-gradient(90deg,rgb(252, 171, 117), rgb(255, 139, 44));
+#progress > #progress-bar::-webkit-progress-value {
+  background: linear-gradient(90deg, rgb(252, 171, 117), rgb(255, 139, 44));
 }
 
 #golfing {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #golfing-gif {
-    display: none; /*will show when retirement is hit*/
-    width: 15rem;
+  display: none; /*will show when retirement is hit*/
+  width: 15rem;
 }
 
 #footer {
-    text-align: right;
-    position: fixed;
-    right: .3rem;
-    bottom: .2rem;
-    font-size: .9rem;
+  text-align: right;
+  position: fixed;
+  right: 0.3rem;
+  bottom: 0.2rem;
+  font-size: 0.9rem;
 }
