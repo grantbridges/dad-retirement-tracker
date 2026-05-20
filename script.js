@@ -1,5 +1,5 @@
 // Grant's start/end date
-var retireeName = "Grant Bridges";
+var retireeName = "Grant";
 var workStartDate = new Date("2016-05-23T08:00:00");
 var workEndDate = new Date("2057-12-21T05:00:00");
 // var retireeName = "Tommy Bridges"
